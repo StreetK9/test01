@@ -80,3 +80,19 @@ console.log("========GET Product By Price==============")
 console.log(prodList.getProductByPrice(25900))
 console.log("==========================================")
 
+
+
+
+
+
+
+class Students{
+    static countId = 1
+    constructor(name) {
+        this.name = name
+        this.id = Students.countId++
+    }
+    getInfo(){
+        return {name: this.name, id: this.id}
+    }
+}
